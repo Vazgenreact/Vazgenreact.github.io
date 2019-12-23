@@ -312,8 +312,7 @@ body.hidden {
     overflow: hidden;
 }
 
-body.no-hidden::after,
-body.hidden::after {
+body.no-hidden::after {
     content: '';
     position: absolute;
     left: 0;
