@@ -4,11 +4,9 @@ $(document).ready(function($){
     $('.mobile-menu').addClass('active');
     $('body').addClass('hidden');
   });
-    
-    document.addEventListener('touchstart', function(event){ alert(event.target) });
   
   $('body').click(function (e) {
-      alert(e.target)
+      alert('test');
     if($(e.target).hasClass('hidden')){
       $('.mobile-menu').removeClass('active');
       $('body').removeClass('hidden');
