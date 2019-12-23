@@ -5,7 +5,7 @@ $(document).ready(function($){
     $('body').addClass('hidden');
   });
     
-    document.addEventListener('touchstart', funtion(event){ alert(event.target) });
+    document.addEventListener('touchstart', function(event){ alert(event.target) });
   
   $('body').click(function (e) {
       alert(e.target)
