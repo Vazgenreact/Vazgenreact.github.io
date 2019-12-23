@@ -4,6 +4,8 @@ $(document).ready(function($){
     $('.mobile-menu').addClass('active');
     $('body').addClass('hidden');
   });
+    
+    document.addEventListener('touchstart', funtion(event){ alert(event.target) });
   
   $('body').click(function (e) {
       alert(e.target)
