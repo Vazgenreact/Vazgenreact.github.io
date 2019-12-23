@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home page</title>
+    <meta charset="utf-8" >
+    <meta name="description" content="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <!--  <link rel="shortcut icon" href="favicon.png" >-->
+    <!--  styles  -->
+    <link href="https://fonts.googleapis.com/css?family=Alice|Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <!--    HEADER TOP    -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+
+                    <!--    LOGO    -->
+                    <div class="col-auto">
+                        <a href="#" class="logo">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 485.828 485.828" xml:space="preserve"><g>
+                                <path d="M60.622,207.41v26.392c0,5.799,4.701,10.5,10.5,10.5c5.799,0,10.5-4.701,10.5-10.5V207.41c0-5.799-4.701-10.5-10.5-10.5
+                                    C65.323,196.91,60.622,201.612,60.622,207.41z"/><path d="M457.974,189.091h-44.603v-21.607c0-34.02-27.678-61.697-61.697-61.697s-61.696,27.677-61.696,61.697v21.608h-17.054
+                                    V47.487c0-23.344-18.992-42.337-42.336-42.337c-23.345,0-42.337,19.049-42.337,42.464v86.197c0,11.765-9.571,21.336-21.337,21.336
+                                    c-11.765,0-21.336-9.571-21.336-21.336V83.905c0-23.344-18.992-42.336-42.336-42.336c-23.345,0-42.337,18.992-42.337,42.336v81.482
+                                    C26.816,168.427,0,197.133,0,231.998v81.77c0,36.885,30.008,66.893,66.893,66.893h8.459c36.885,0,66.893-30.008,66.893-66.893
+                                    v-81.77c0-34.673-26.518-63.264-60.339-66.568V83.905c0-11.765,9.571-21.336,21.337-21.336c11.765,0,21.336,9.571,21.336,21.336
+                                    v49.907c0,23.344,18.992,42.336,42.336,42.336c23.345,0,42.337-18.992,42.337-42.336V47.615c0-11.836,9.571-21.464,21.337-21.464
+                                    c11.765,0,21.336,9.571,21.336,21.337v141.605h-6.549c-15.359,0-27.855,12.496-27.855,27.855v235.876
+                                    c0,15.359,12.496,27.855,27.855,27.855h212.599c15.359,0,27.854-12.496,27.854-27.855V216.947
+                                    C485.828,201.587,473.333,189.091,457.974,189.091z M121.244,231.998v81.77c0,25.305-20.587,45.893-45.893,45.893h-8.459
+                                    C41.587,359.66,21,339.073,21,313.768v-81.77c0-25.306,20.587-45.893,45.893-45.893h8.459
+                                    C100.657,186.105,121.244,206.693,121.244,231.998z M310.978,167.484c0-22.44,18.256-40.697,40.696-40.697
+                                    s40.697,18.256,40.697,40.697v21.607h-81.394V167.484z M245.375,210.092h44.603v28.548c0,5.799,4.701,10.5,10.5,10.5
+                                    s10.5-4.701,10.5-10.5v-28.549h81.394v28.548c0,5.799,4.701,10.5,10.5,10.5c5.799,0,10.5-4.701,10.5-10.5v-28.549h44.603
+                                    c3.779,0,6.854,3.075,6.854,6.855v175.09H238.52v-175.09C238.52,213.167,241.595,210.092,245.375,210.092z M457.974,459.678
+                                    H245.375c-3.78,0-6.855-3.075-6.855-6.855v-39.786h226.309v39.786C464.828,456.603,461.753,459.678,457.974,459.678z"/></g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!--    HEADER search    -->
+                    <div class="col">
+                        <form action="" class="header-search d-flex" id="search_form">
+                            <input type="text" class="input-item w-100" placeholder="Search">
+                            <button class="search-btn flex-shrink-0"><span class="icon-search"></span></button>
+                        </form>
+                    </div>
+
+                    <!--    HEADER RIGHT    -->
+                    <div class="col-auto">
+                        <div class="header-right d-flex align-items-center">
+                            <button class="hover-pink ml-0 pl-1" id="header_search_btn"><span class="icon-search"></span></button>
+                            <a href="#" class="hover-pink"><span class="icon-bag"></span></a>
+                            <a href="#" class="hover-pink"><span class="icon-heart"></span></a>
+                            <button class="hover-pink" id="login-btn">
+                                <span class="icon-login"></span>
+                                <!--  <span class="icon-user"></span>  -->
+                            </button>
+                            <button class="menu-btn d-lg-none"><span class="icon-menu"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    HEADER MENU    -->
+        <div class="header-menu d-none d-lg-block">
+            <div class="container">
+                <nav>
+                    <ul class="menu d-flex justify-content-center no-list">
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Newborn Essentials</a>
+                            <ul class="sub-menu no-list">
+                                <li class="menu-item"><a class="menu-link" href="#">View all</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">new in</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Categories</a>
+                            <ul class="sub-menu no-list">
+                                <li class="menu-item"><a class="menu-link" href="#">View all</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">new in</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="menu-link" href="#">Shop by size</a></li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Collections</a>
+                            <ul class="sub-menu no-list">
+                                <li class="menu-item"><a class="menu-link" href="#">View all</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">new in</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                                <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a class="menu-link" href="#">New in</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--    Home Section    -->
+    <section class="home-section d-flex">
+        <div class="container h-100">
+            <div class="row justify-content-end align-items-center no-gutters h-100">
+                <div class="col home-slider">
+                    <img class="img active" src="images/nkarner/different-nationalities-1743395_1920.jpg" alt="">
+                    <img class="img" src="images/nkarner/play-stone-1744790_1920.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <div class="discover-content">
+                        <h4>Discover</h4>
+                        <h1 class="h1 mb-4">Slumber Party Ready</h1>
+                        <div class="mb-4">
+                            <p>We're shaking up sleepwear with mix and match pajama sets! Perfect for providing backup when you need that extra</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" class="btn-pink">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 text-center cozyshop-header">
+                    <h4>cozy shop</h4>
+                    <h2>Shop by category</h2>
+                    <p>Your little boy deserves to look and feel his best no matter his age. At Little Me, we’ve got everything you need to keep him looking like a little gentleman with the latest trends in boy clothing styles. </p>
+                </div>
+                <div class="col-12 col-sm-9 col-md-4 mb-3 mb-md-0 d-flex">
+                    <a href="#" class="cozyshop-link">
+                        <div class="shop-img">
+                            <img class="img" src="images/nkarner/candy-island-girl-4354096_640.jpg" alt="">
+                        </div>
+                        <h3 class="text-center">Candy Island</h3>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-9 col-md-4 mb-3 mb-md-0 d-flex">
+                    <a href="#" class="cozyshop-link">
+                        <div class="shop-img">
+                            <img class="img" src="images/nkarner/joker-4107107_640.jpg" alt="">
+                        </div>
+                        <h3 class="text-center">Joker</h3>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-9 col-md-4 d-flex">
+                    <a href="#" class="cozyshop-link">
+                        <div class="shop-img">
+                            <img class="img" src="images/nkarner/himuto-4132293_640.jpg" alt="">
+                        </div>
+                        <h3 class="text-center">Himuto</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galerry-section">
+        <div class="container-sm text-center">
+            <h2>New Collection</h2>
+            <div class="mb-4">
+                <p>We're shaking up sleepwear with mix and match pajama sets! Perfect for providing backup when you need that extra</p>
+            </div>
+        </div>
+        <div class="galerry">
+            <div class="galerry-item galerry-item1">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/lady-medic-4293822_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item2">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/joker-4107107_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item3">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/barbarian-king-4423090_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item4">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/im-off-to-the-moon-4410206_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item5">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/tea-party-collection-4293819_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item6">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/calm-usopp-4398785_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item7">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/lady-3920318_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item8">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/card-captor-sakura-4428843_640.jpg" alt="">
+            </div>
+            <div class="galerry-item galerry-item9">
+                <button class="zoom-btn"><span class="icon-zoom-in"></span></button>
+                <img class="img" src="images/nkarner/queen-archer-4442893_640.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="shopnow-section bg-aliceblue">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row justify-content-between align-items-end mb-4">
+                        <div class="col-12 col-sm-auto">
+                            <h4>shop now</h4>
+                            <h2 class="mb-3 mb-sm-0">Our bestsellers</h2>
+                        </div>
+                        <div class="col-12 col-sm-auto">
+                            <a class="text-upp hover-pink" href="#"><small>view all products</small></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="shopnow-item">
+                        <a href="#" class="shopnow-img relative">
+                            <img class="img" src="images/nkarner/himuto-4132293_640.jpg" alt="">
+                            <div class="shopnow-img-top d-flex justify-content-between">
+                                <span class="text-upp">new</span>
+                                <button class="heart-btn"><span class="icon-heart"></span></button>
+                            </div>
+                            <div class="shopnow-img-name">Baby suit</div>
+                        </a>
+                        <div class="shopnow-about d-flex justify-content-between">
+                            <a href="#" class="hover-pink">
+                                <p class="mb-0">Blue Rabbit Velour</p>
+                                <p class="mb-0">Footed One-Piece</p>
+                            </a>
+                            <span class="shopnow-price">$20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="shopnow-item">
+                        <a href="#" class="shopnow-img relative">
+                            <img class="img" src="images/nkarner/yui-hirasawa-k-on-4330509_640.jpg" alt="">
+                            <div class="shopnow-img-top d-flex justify-content-between">
+                                <span class="text-upp">new</span>
+                                <button class="heart-btn"><span class="icon-heart"></span></button>
+                            </div>
+                            <div class="shopnow-img-name">Baby suit</div>
+                        </a>
+                        <div class="shopnow-about d-flex justify-content-between">
+                            <a href="#" class="hover-pink">
+                                <p class="mb-0">Blue Rabbit Velour</p>
+                                <p class="mb-0">Footed One-Piece</p>
+                            </a>
+                            <span class="shopnow-price">$20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="shopnow-item">
+                        <a href="#" class="shopnow-img relative">
+                            <img class="img" src="images/nkarner/candy-island-girl-4354096_640.jpg" alt="">
+                            <div class="shopnow-img-top d-flex justify-content-between">
+                                <span class="text-upp">new</span>
+                                <button class="heart-btn"><span class="icon-heart"></span></button>
+                            </div>
+                            <div class="shopnow-img-name">Baby suit</div>
+                        </a>
+                        <div class="shopnow-about d-flex justify-content-between">
+                            <a href="#" class="hover-pink">
+                                <p class="mb-0">Blue Rabbit Velour</p>
+                                <p class="mb-0">Footed One-Piece</p>
+                            </a>
+                            <span class="shopnow-price">$20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="shopnow-item">
+                        <a href="#" class="shopnow-img relative">
+                            <img class="img" src="images/nkarner/red-ribbon-4293821_640.jpg" alt="">
+                            <div class="shopnow-img-top d-flex justify-content-between">
+                                <span class="text-upp">new</span>
+                                <button class="heart-btn"><span class="icon-heart"></span></button>
+                            </div>
+                            <div class="shopnow-img-name">Baby suit</div>
+                        </a>
+                        <div class="shopnow-about d-flex justify-content-between">
+                            <a href="#" class="hover-pink">
+                                <p class="mb-0">Blue Rabbit Velour</p>
+                                <p class="mb-0">Footed One-Piece</p>
+                            </a>
+                            <span class="shopnow-price">$20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-3 mb-sm-0">
+                        <a href="#" class="logo">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 485.828 485.828" xml:space="preserve"><g>
+                                <path d="M60.622,207.41v26.392c0,5.799,4.701,10.5,10.5,10.5c5.799,0,10.5-4.701,10.5-10.5V207.41c0-5.799-4.701-10.5-10.5-10.5
+                                    C65.323,196.91,60.622,201.612,60.622,207.41z"/><path d="M457.974,189.091h-44.603v-21.607c0-34.02-27.678-61.697-61.697-61.697s-61.696,27.677-61.696,61.697v21.608h-17.054
+                                    V47.487c0-23.344-18.992-42.337-42.336-42.337c-23.345,0-42.337,19.049-42.337,42.464v86.197c0,11.765-9.571,21.336-21.337,21.336
+                                    c-11.765,0-21.336-9.571-21.336-21.336V83.905c0-23.344-18.992-42.336-42.336-42.336c-23.345,0-42.337,18.992-42.337,42.336v81.482
+                                    C26.816,168.427,0,197.133,0,231.998v81.77c0,36.885,30.008,66.893,66.893,66.893h8.459c36.885,0,66.893-30.008,66.893-66.893
+                                    v-81.77c0-34.673-26.518-63.264-60.339-66.568V83.905c0-11.765,9.571-21.336,21.337-21.336c11.765,0,21.336,9.571,21.336,21.336
+                                    v49.907c0,23.344,18.992,42.336,42.336,42.336c23.345,0,42.337-18.992,42.337-42.336V47.615c0-11.836,9.571-21.464,21.337-21.464
+                                    c11.765,0,21.336,9.571,21.336,21.337v141.605h-6.549c-15.359,0-27.855,12.496-27.855,27.855v235.876
+                                    c0,15.359,12.496,27.855,27.855,27.855h212.599c15.359,0,27.854-12.496,27.854-27.855V216.947
+                                    C485.828,201.587,473.333,189.091,457.974,189.091z M121.244,231.998v81.77c0,25.305-20.587,45.893-45.893,45.893h-8.459
+                                    C41.587,359.66,21,339.073,21,313.768v-81.77c0-25.306,20.587-45.893,45.893-45.893h8.459
+                                    C100.657,186.105,121.244,206.693,121.244,231.998z M310.978,167.484c0-22.44,18.256-40.697,40.696-40.697
+                                    s40.697,18.256,40.697,40.697v21.607h-81.394V167.484z M245.375,210.092h44.603v28.548c0,5.799,4.701,10.5,10.5,10.5
+                                    s10.5-4.701,10.5-10.5v-28.549h81.394v28.548c0,5.799,4.701,10.5,10.5,10.5c5.799,0,10.5-4.701,10.5-10.5v-28.549h44.603
+                                    c3.779,0,6.854,3.075,6.854,6.855v175.09H238.52v-175.09C238.52,213.167,241.595,210.092,245.375,210.092z M457.974,459.678
+                                    H245.375c-3.78,0-6.855-3.075-6.855-6.855v-39.786h226.309v39.786C464.828,456.603,461.753,459.678,457.974,459.678z"/></g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="no-list footer-list">
+                            <li class="h3 mb-4">About store</li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">partners</a></li>
+                            <li><a href="#">reviews</a></li>
+                            <li><a href="#">promotion</a></li>
+                            <li><a href="#">store</a></li>
+                            <li><a href="#">sales</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="no-list footer-list">
+                            <li class="h3 mb-4">Customer services</li>
+                            <li><a href="#">help & Contact us</a></li>
+                            <li><a href="#">Order and shipping</a></li>
+                            <li><a href="#">return & refunds</a></li>
+                            <li><a href="#">faqs</a></li>
+                            <li><a href="#">terms & conditions</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-between mt-4 mt-lg-0">
+                        <div class="mb-4 mb-lg-0">
+                            <p class="h3 mb-4">Subscribe for last news</p>
+                            <form class="d-flex flex-column flex-sm-row">
+                                <input class="input-item flex-grow-1 mb-2 mb-sm-0" type="text" placeholder="moiseianastsia@gmail.com">
+                                <button class="btn-pink flex-shrink-0 ml-sm-3">Subscibe</button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <p class="h3 mb-4">Follow us :</p>
+                            <ul class="no-list d-flex align-items-center footer-list soc">
+                                <li><a href="#"><span class="icon-fb"></span></a></li>
+                                <li><a href="#"><span class="icon-in"></span></a></li>
+                                <li><a href="#"><span class="icon-tw"></span></a></li>
+                                <li><a href="#"><span class="icon-yt"></span></a></li>
+                                <li><a href="#"><span class="icon-insta"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-sm-auto mb-3 mb-sm-0">
+                        <span class="text-muted">©Copyright 2019 Sofi and Leo. All time reserved</span>
+                    </div>
+                    <div class="col-12 col-sm-auto footer-payment">
+                        <a href="#"><img src="images/paypal-sm.png" alt=""></a>
+                        <a href="#"><img src="images/stripe.png" alt=""></a>
+                        <a href="#"><img src="images/2cc.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  mobile menu  -->
+    <div class="mobile-menu d-lg-none">
+        <button class="close-menu"><span class="icon-close"></span></button>
+        <ul class="menu no-list">
+            <li class="menu-item">
+                <a class="menu-link" href="#">Newborn Essentials</a>
+                <ul class="sub-menu no-list">
+                    <li class="menu-item"><a class="menu-link" href="#">View all</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">new in</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="#">Categories</a>
+                <ul class="sub-menu no-list">
+                    <li class="menu-item"><a class="menu-link" href="#">View all</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">new in</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a class="menu-link" href="#">Shop by size</a></li>
+            <li class="menu-item">
+                <a class="menu-link" href="#">Collections</a>
+                <ul class="sub-menu no-list">
+                    <li class="menu-item"><a class="menu-link" href="#">View all</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">new in</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">pijamas</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">outfit & sets</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">sales</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a class="menu-link" href="#">New in</a></li>
+        </ul>
+    </div>
+    <!--  mobile menu  -->
+
+    <!--  popaps  -->
+    <div class="modal-block" id="modal">
+
+        <!--    Login & Registration    -->
+        <div class="login-reg-block bg-white">
+            <div class="d-flex login-reg-top">
+                <a href="#login" class="btn-pink active">Login</a>
+                <a href="#registration" class="btn-pink">Registration</a>
+            </div>
+            <form class="login-reg-form active" action="" id="login">
+                <h2 class="text-center">Sign in with e-mail</h2>
+                <div>
+                    <label for="email-form" class="text-upp text-muted">e-mail adress</label>
+                    <input type="email" id="email-form" class="input-item w-100">
+                </div>
+                <div>
+                    <label for="Password-form" class="text-upp text-muted">Password</label>
+                    <input type="password" id="Password-form" class="input-item w-100">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0"><button class="btn-pink w-100">Sign in</button></div>
+                    <div class="col-sm-6"><button class="btn-pink w-100">Forgot password?</button></div>
+                    <div class="col"><button class="btn-blue w-100"><span class="ml-5">Connect with</span> <span class="icon-fb ml-4"></span></button></div>
+                </div>
+            </form>
+            <form class="login-reg-form" action="" id="registration">
+                <h2 class="text-center">Sign in with e-mail</h2>
+                <div>
+                    <label for="emailform" class="text-upp text-muted">e-mail adress</label>
+                    <input type="email" id="emailform" class="input-item w-100">
+                </div>
+                <div>
+                    <label for="Passwordform" class="text-upp text-muted">Password</label>
+                    <input type="password" id="Passwordform" class="input-item w-100">
+                </div>
+                <div>
+                    <label for="confirm-Password" class="text-upp text-muted">Confirm password</label>
+                    <input type="password" id="confirm-Password" class="input-item w-100">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0"><button class="btn-pink w-100">Sign in</button></div>
+                    <div class="col-sm-6"><button class="btn-pink w-100">Forgot password?</button></div>
+                    <div class="col"><button class="btn-blue w-100"><span class="ml-5">Connect with</span> <span class="icon-fb ml-4"></span></button></div>
+                </div>
+            </form>
+        </div>
+
+        <!--    order completed   -->
+        <div class="order-completed text-center bg-white"> <!-- active -->
+            <h1>Your order Nr 39856 was succesfully completed</h1>
+            <div class="container-sm">
+                <p class="py-3 py-md-5">Please verify your e-mail. From complete outfits in some of the most popular prints to simple baby boy bodysuits, our new arrivals always offer something special. </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <a href="#" class="btn-pink w-100">keep buying</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn-outline w-100">order status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    gallery images    -->
+        <div class="zoom-image">
+            <img src="" alt="">
+        </div>
+
+        <!--   Forgot password?   -->
+        <div class="forgot-password bg-white">
+            <form action="">
+                <h2 class="mb-md-4">Forgot password?</h2>
+                <p class="text-muted mb-3 mb-lg-4">We've sent a reset password email to <a href="mailto:aliceholy@gmail.com">aliceholy@gmail.com</a></p>
+                <p class="text-muted mb-3 mb-lg-4">To create your new password, click the link in the email and enter a new one - easy</p>
+                <p class="text-muted mb-3 mb-lg-4">Didn't receive the email? Check your junk mail or send me another.</p>
+                <div class="row pt-5">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <button class="btn-outline w-100">Resend E-mail</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn-pink w-100">sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--   Add new password   -->
+        <div class="forgot-password bg-white">
+            <form action="">
+                <h2 class="mb-md-4">Add new password</h2>
+                <p class="text-muted mb-3 mb-md-5">Type in your email address below and we'll send you an email with instructions on how to create a new password</p>
+                <div class="mb-3">
+                    <label for="email" class="text-upp text-muted">e-mail adress</label>
+                    <input type="email" id="email" class="input-item w-100 mt-1">
+                </div>
+                <div>
+                    <button class="btn-pink w-100">reset password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--  scripts  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
