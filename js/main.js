@@ -5,9 +5,9 @@ $(document).ready(function($){
     $('body').addClass('hidden');
   });
   
-  $(document).click(function (event) {
-      alert(event.target)
-    if($(event.target).hasClass('hidden')){
+  $('body').click(function (e) {
+      alert(e.target)
+    if($(e.target).hasClass('hidden')){
       $('.mobile-menu').removeClass('active');
       $('body').removeClass('hidden');
       $('.personal').removeClass('active');
