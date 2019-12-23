@@ -4,7 +4,7 @@ $(document).ready(function($){
     $('.mobile-menu').addClass('active');
     $('body').addClass('hidden');
   });
-  $(document).on('click', function (e) {
+  $(document).click(function (e) {
       alert(e);
     if($(e.target).hasClass('hidden')){
       $('.mobile-menu').removeClass('active');
